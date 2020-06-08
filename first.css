@@ -1,0 +1,184 @@
+@import "./typography.css";
+@import "./media_queries.css";
+@import "./social_sharing.css";
+
+*{
+    margin: 0;
+}
+img {
+    width: 160px;
+    height: 160px;
+    border-radius: 20%;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 160 repeat(8, 200px) 100px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "header header header header"
+                         "main main main author"
+                         "ingre ingre ingre author"
+                         "step1 step1 step1 step1"
+                         "step2 step2 step2 step2"
+                         "step3 step3 step3 step3"
+                         "step4 step4 step4 step4"
+                         "step5 step5 step5 step5"
+                         "step6 step6 step6 step6"
+                         "ft ft ft ft";
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    height: 80px;
+    background-color: #BF360C;
+    color: whitesmoke;
+}
+
+.name {
+    color: whitesmoke;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: 2px solid #FF8A65;
+    margin: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    align-items: flex-start;
+}
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #FF8A65;
+    color: white;
+}
+
+h1 {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #D84315;
+}
+
+h2 {
+    padding-bottom: 10px;
+    color: #FF7043;
+}
+
+h3 {
+    writing-mode: vertical-rl;
+    text-orientation: upright; 
+    padding: 10px 20px;
+    color: #FF7043;
+}
+
+h4 {
+    padding: 5px;
+}
+
+p {
+    padding: 20px;
+}
+
+.first {
+    grid-area: main;
+    padding-left: 20px;
+    
+}
+.popular {
+    text-align:center;
+}
+.sub {
+    display: flex;
+    justify-content: space-around;
+}
+
+.second {
+    grid-area: ingre;
+    display: flex;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+#ingre {
+    padding: 0px 20px 10px 20px;
+}
+
+li {
+    line-height: 1.5rem;
+}
+
+.author {
+    border-left: 2px solid #ffab91;
+    padding: 10px;
+    grid-area: author;
+    text-align: left;
+}
+
+#avatar {
+    width: 100px;
+    height: auto;
+}
+
+.step1 {
+    grid-area: step1;
+    display: flex;
+    height: 180px;
+    padding-top: 20px;
+    border-top: 2px solid #ffab91;
+}
+
+.step2 {
+    grid-area: step2;
+    display: flex;
+    height: 180px;
+    padding-top: 20px;
+    border-top: 2px solid #ffab91;
+}
+.step3 {
+    grid-area: step3;
+    display: flex;
+    height: 180px;
+    padding-top: 20px;
+    border-top: 2px solid #ffab91; 
+}
+
+.step4 {
+    grid-area: step4;
+    display: flex;
+    height: 180px;
+    padding-top: 20px;
+    border-top: 2px solid #ffab91;
+}
+
+.step5 {
+    grid-area: step5;
+    display: flex;
+    height: 180px;
+    padding-top: 20px;
+    border-top: 2px solid #ffab91;
+}
+
+.step6 {
+    grid-area: step6;
+    display: flex;
+    height: 180px;
+    padding-top: 20px;
+    border-top: 2px solid #ffab91;
+}
+
+footer {
+    grid-area: ft;
+    padding: 20px;
+    background-color: #BF360C;
+    color: whitesmoke;
+    text-align: center;
+}

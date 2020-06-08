@@ -1,0 +1,116 @@
+@import "./typography.css";
+
+*{
+    margin: 0;
+}
+
+h1{
+    padding: 20px;
+}
+
+h2{
+    padding: 20px;
+    color: #FF7043;
+    text-align: center;
+}
+
+h4{
+    margin: 0;
+    text-align: center;
+}
+
+header{
+    background-color: #BF360C;
+    color: whitesmoke;
+    padding-bottom: 20px;
+}
+
+.category{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 20px;
+}
+
+li{
+    display: inline;
+    padding: 20px;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+input{
+    text-align: right;
+}
+
+button{
+    background-color: rgb(105, 25, 1);
+}
+
+.pop{
+    display: grid;
+    grid-template: minmax(200px, 304px) / repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.pop--fit{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+img{
+    width: 100%;
+}
+        
+.item_img{
+    display: grid;
+    grid-template: minmax(120px, 158px)/ repeat(8, 1fr);
+    grid-gap: 10px;;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.item_img--fit{
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.item_img img{
+    width: 100%;
+    border: 1px solid #FF8A65;
+    border-radius: 50%;
+}
+
+.banner{
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    /* text-align: center; */
+    /* color: gray; */
+    /* padding: 8px; */
+
+}
+/* .banner{
+    padding: 20px 20px;
+    display: flex;
+/* } */
+
+.banner input{
+    text-align: center;
+    color: gray;
+    padding: 8px;
+}
+label{
+    margin: 7px;
+}
+#unit{
+    padding: 8px;
+}
+
+footer{
+    padding: 20px;
+    background-color: #BF360C;
+    color: whitesmoke;
+}
